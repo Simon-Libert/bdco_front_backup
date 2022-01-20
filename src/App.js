@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 
 import Profile from './components/Profile';
+import Burger from './components/burger';
 
 function App() {
 	const [currentUser, setCurrentUser] = useState(undefined);
@@ -35,14 +36,14 @@ function App() {
 				<div className='navbar-nav mr-auto'>
 					<li className='nav-item'>
 						<Link to={'/home'} className='nav-link'>
-							Home
+							Accueil
 						</Link>
 					</li>
 
 					{currentUser && (
 						<li className='nav-item'>
-							<Link to={'/user'} className='nav-link'>
-								User
+							<Link to={'/users'} className='nav-link'>
+								Utilisateur
 							</Link>
 						</li>
 					)}
@@ -56,16 +57,18 @@ function App() {
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<a href='/login' className='nav-link' onClick={logOut}>
-								LogOut
+							<a href='/' className='nav-link' onClick={logOut}>
+								Se déconnecter
 							</a>
 						</li>
+
+						<Burger />
 					</div>
 				) : (
 					<div className='navbar-nav ml-auto'>
 						<li className='nav-item'>
 							<Link to={'/login'} className='nav-link'>
-								Login
+								Se connecter
 							</Link>
 						</li>
 					</div>
