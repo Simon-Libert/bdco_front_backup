@@ -3,10 +3,10 @@ export const fonts = {
 };
 
 export const fontSizes = {
-	fontXS: `12px`,
-	fontS: `14px`,
-	fontM: `16px`,
-	fontL: `24px`,
-	fontXL: `32px`,
-	fontXXL: `48px`,
+	fontXS: `10px`,
+	fontS: `10px`,
+	fontM: `10px`,
+	fontL: `10px`,
+	fontXL: `10px`,
+	fontXXL: `10px`,
 };

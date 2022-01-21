@@ -24,7 +24,7 @@ class Create extends Component {
 
 		return (
 			<div>
-				<h1>Nouvelle Horaire</h1>
+				<h1>Nouvel Horaire</h1>
 
 				{this.props.loading && (
 					<div className='alert alert-info' role='status'>
@@ -40,7 +40,7 @@ class Create extends Component {
 
 				<Form onSubmit={this.props.create} values={this.props.item} />
 				<Link to='.' className='btn btn-primary'>
-					Back to list
+					Retour à la liste
 				</Link>
 			</div>
 		);

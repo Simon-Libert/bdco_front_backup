@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 
 import Profile from './components/Profile';
-import Burger from './components/burger';
+import Users from './components/Users';
 
 function App() {
 	const [currentUser, setCurrentUser] = useState(undefined);
@@ -61,8 +61,6 @@ function App() {
 								Se déconnecter
 							</a>
 						</li>
-
-						<Burger />
 					</div>
 				) : (
 					<div className='navbar-nav ml-auto'>
@@ -80,6 +78,7 @@ function App() {
 					<Route exact path={['/', '/home']} component={Home} />
 					<Route exact path='/login' component={Login} />
 					<Route exact path='/profile' component={Profile} />
+					<Route exact path='/users' component={Users} />
 				</Switch>
 			</div>
 		</div>

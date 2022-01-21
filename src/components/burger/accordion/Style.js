@@ -8,7 +8,7 @@ export const StyledAccordionSection = styled.div`
 	flex-direction: column;
 	height: 100vw;
 	overflow: auto;
-	margin: 8vw 0px;
+	margin: auto;
 `;
 
 export const AccordionWrapper = styled.div`
@@ -20,12 +20,13 @@ export const AccordionWrapper = styled.div`
 
 export const AccordionTitle = styled.button`
 	display: flex;
+	text-align: left;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	padding: 6vw 12vw;
+	width: 90%;
+	padding: 1vw;
 	text-transform: uppercase;
-	font-size: 4vw;
+	font-size: 2.5vw;
 	position: relative;
 	letter-spacing: 0.15em;
 	background-color: ${colors.COLOR_WHITE};
@@ -43,16 +44,16 @@ export const AccordionItems = styled.ul`
 	width: 100%;
 	padding: ${({ open }) => (open ? `4vw 12vw` : `0px`)};
 	text-transform: uppercase;
-	font-size: 4vw;
+	font-size: 3vw;
 	margin: 0;
 	position: relative;
-	letter-spacing: 0.15em;
+	letter-spacing: 0.1em;
 `;
 
 export const AccordionItem = styled.li`
 	display: ${({ open }) => (open ? 'block' : 'none')};
 	background-color: ${colors.COLOR_WHITE};
-	padding: 6vw 12vw;
+	padding: 1vw;
 	width: 100%;
 	font-size: ${fontSizes.fontS};
 

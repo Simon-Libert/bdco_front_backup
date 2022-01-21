@@ -51,8 +51,11 @@ import Login from './components/Login';
 //import de la route profile
 import Profile from './components/Profile';
 
+//import de la route users
+import Users from './components/Users';
+
 //import de la function devtools redux
-import { composeWithDevTools } from 'redux-devtools-extension';
+// import { composeWithDevTools } from 'redux-devtools-extension';
 
 const history = createBrowserHistory();
 const store = createStore(
@@ -70,7 +73,7 @@ const store = createStore(
 		user,
 		/* Add your reducers here */
 	}),
-	composeWithDevTools(applyMiddleware(routerMiddleware(history), thunk))
+	applyMiddleware(routerMiddleware(history), thunk)
 );
 
 ReactDOM.render(
@@ -94,6 +97,7 @@ ReactDOM.render(
 				{Login}
 				{Profile}
 				{Home}
+				{Users}
 			</Switch>
 		</ConnectedRouter>
 	</Provider>,

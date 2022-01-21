@@ -44,41 +44,31 @@ class Form extends Component {
 	render() {
 		return (
 			<form onSubmit={this.props.handleSubmit}>
-				<Field component={this.renderField} name='Ville' type='text' placeholder='' />
+				<Field component={this.renderField} name='ville' type='text' placeholder='' />
+
 				<Field
 					component={this.renderField}
-					name='Code postal'
+					name='cp'
 					type='number'
 					placeholder=''
 					normalize={(v) => parseFloat(v)}
 				/>
+				<Field component={this.renderField} name='typedevoie' type='text' placeholder='' />
+				<Field component={this.renderField} name='nomdelavoie' type='text' placeholder='' />
 				<Field
 					component={this.renderField}
-					name='Type de voie'
+					name='coordonneegps'
 					type='text'
 					placeholder=''
 				/>
 				<Field
 					component={this.renderField}
-					name='Nom de la voie'
+					name='complementadresse'
 					type='text'
 					placeholder=''
 				/>
-				<Field
-					component={this.renderField}
-					name='Coordonnées gps'
-					type='text'
-					placeholder=''
-				/>
-				<Field
-					component={this.renderField}
-					name="Complément d'adresse"
-					type='text'
-					placeholder=''
-				/>
-				<Field component={this.renderField} name='Bis / Ter' type='text' placeholder='' />
-
-				<Field component={this.renderField} name='Commercebsm' type='text' placeholder='' />
+				<Field component={this.renderField} name='bister' type='text' placeholder='' />
+				<Field component={this.renderField} name='commercebsm' type='text' placeholder='' />
 
 				<button type='submit' className='btn btn-success'>
 					Valider

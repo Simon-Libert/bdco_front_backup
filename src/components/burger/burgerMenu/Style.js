@@ -8,14 +8,16 @@ export const BurgerMenuWrapper = styled.div`
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	flex-direction: column;
-	margin: 4vw;
+	margin: 1vw;
 
 	@media ${device.laptop} {
+		display: ;
 	}
 `;
 
 export const BurgerLine = styled.div`
 	background-color: ${colors.COLOR_BLACK};
+	display: flex;
 	height: 0.5vw;
 	width: 6vw;
 	align-self: center;

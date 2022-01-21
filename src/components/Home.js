@@ -1,7 +1,12 @@
 import React from 'react';
+import ButtonAccueil from './ButtonAccueil';
 
 const Home = () => {
-	return <div>Salut les blaireaux!</div>;
+	return (
+		<div>
+			<ButtonAccueil />
+		</div>
+	);
 };
 
 export default Home;
