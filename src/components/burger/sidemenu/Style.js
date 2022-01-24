@@ -4,8 +4,8 @@ import { colors } from '../../../styles/Colors';
 export const StyledSideMenu = styled.aside`
 	box-sizing: border-box;
 	height: auto;
-	width: 100vw;
-	position: fixed;
+	width: 100%;
+	position: relative;
 	top: 14.1vw;
 	z-index: 99;
 	overflow: hidden auto;

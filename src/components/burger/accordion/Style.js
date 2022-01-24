@@ -26,7 +26,7 @@ export const AccordionTitle = styled.button`
 	width: 90%;
 	padding: 1vw;
 	text-transform: uppercase;
-	font-size: 2.5vw;
+	font-size: auto;
 	position: relative;
 	letter-spacing: 0.15em;
 	background-color: ${colors.COLOR_WHITE};
@@ -44,7 +44,8 @@ export const AccordionItems = styled.ul`
 	width: 100%;
 	padding: ${({ open }) => (open ? `4vw 12vw` : `0px`)};
 	text-transform: uppercase;
-	font-size: 3vw;
+	font-size: ${fontSizes.fontM};
+	fonr-weight: bold;
 	margin: 0;
 	position: relative;
 	letter-spacing: 0.1em;
@@ -56,10 +57,6 @@ export const AccordionItem = styled.li`
 	padding: 1vw;
 	width: 100%;
 	font-size: ${fontSizes.fontS};
-
-	&:last-of-type {
-		margin-bottom: 2vw;
-	}
 `;
 
 export const AccordionIcon = styled(FontAwesomeIcon)`

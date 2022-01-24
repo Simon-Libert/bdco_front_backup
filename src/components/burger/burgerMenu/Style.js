@@ -5,14 +5,9 @@ import { colors } from '../../../styles/Colors';
 export const BurgerMenuWrapper = styled.div`
 	height: 4.8vw;
 	display: flex;
-	-webkit-box-pack: justify;
 	justify-content: space-between;
 	flex-direction: column;
 	margin: 1vw;
-
-	@media ${device.laptop} {
-		display: ;
-	}
 `;
 
 export const BurgerLine = styled.div`

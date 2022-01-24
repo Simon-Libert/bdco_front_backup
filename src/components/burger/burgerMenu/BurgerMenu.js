@@ -7,7 +7,7 @@ const BurgerMenu = () => {
 
 	return (
 		<div>
-			<BurgerMenuWrapper open={open} onClick={() => setOpen(!open)}>
+			<BurgerMenuWrapper className='burger' open={open} onClick={() => setOpen(!open)}>
 				<BurgerLine open={open}></BurgerLine>
 				<BurgerLine open={open}></BurgerLine>
 				<BurgerLine open={open}></BurgerLine>

@@ -3,9 +3,9 @@ export const fonts = {
 };
 
 export const fontSizes = {
-	fontXS: `10px`,
-	fontS: `10px`,
-	fontM: `10px`,
+	fontXS: `14px`,
+	fontS: `14px`,
+	fontM: `14px`,
 	fontL: `10px`,
 	fontXL: `10px`,
 	fontXXL: `10px`,
